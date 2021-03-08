@@ -1,10 +1,19 @@
 {
+  "name": "msw-test",
+  "version": "0.0.0",
   "dependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.8",
+    "@babel/plugin-transform-runtime": "^7.13.9",
+    "@babel/preset-env": "^7.13.9",
     "axios": "^0.21.1",
     "jest": "^26.6.3",
     "jest-watch-typeahead": "^0.6.1",
     "msw": "^0.27.0"
   },
+  "plugins": [
+    "@babel/plugin-transform-runtime"
+  ],
   "scripts": {
     "test": "yarn jest"
   }
